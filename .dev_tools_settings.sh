@@ -11,3 +11,7 @@ export PATH JRUBY_HOME
 APPENGINE_JAVA_SDK=/opt/appengine-java-sdk
 PATH=$PATH:$APPENGINE_JAVA_SDK/bin
 export PATH APPENGINE_JAVA_SDK
+
+# Jewler gem options
+JEWELER_OPTS="--rspec"
+export JEWELER_OPTS
