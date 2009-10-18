@@ -35,7 +35,7 @@ export LC_CTYPE=en_US.UTF-8
 # System
 
 alias home="cd ~"
-alias lsa="ls -lah"
+alias ll="ls -lah"
 alias cls="clear"
 
 alias tar-xvf="tar xvf"
