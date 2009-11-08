@@ -45,6 +45,10 @@ alias tar-xvf="tar xvf"
 alias cdb-start="sudo couchdb -b && echo Futon: Overview at http://localhost:5984/_utils"
 alias cdb-stop="sudo couchdb -d"
 
+# Development tools
+
+alias spec="spec --color"
+
 #
 # MACPORTS SETTINGS ###############################################################################
 #
