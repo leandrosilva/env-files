@@ -40,14 +40,33 @@ alias cls="clear"
 
 alias tar-xvf="tar xvf"
 
-# Databse
+# Database
 
 alias cdb-start="sudo couchdb -b && echo Futon: Overview at http://localhost:5984/_utils"
 alias cdb-stop="sudo couchdb -d"
 
+# Middleware
+
+alias openjms-startup="/opt/openjms/bin/startup.sh &"
+alias openjms-shutdown="/opt/openjms/bin/shutdown.sh"
+alias openjms-admin="/opt/openjms/bin/admin.sh"
+
 # Development tools
 
 alias spec="spec --color"
+
+# Web server
+
+alias yaws-start="sudo launchctl load -w /Library/LaunchDaemons/org.macports.yaws.plist"
+alias yaws-stop="sudo launchctl unload -w /Library/LaunchDaemons/org.macports.yaws.plist"
+
+#
+# RVM SETTINGS ####################################################################################
+#
+
+if [[ -s /Users/leandro/.rvm/scripts/rvm ]] ; then
+	source /Users/leandro/.rvm/scripts/rvm ;
+fi
 
 #
 # MACPORTS SETTINGS ###############################################################################
