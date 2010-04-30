@@ -53,6 +53,7 @@ alias openjms-admin="/opt/openjms/bin/admin.sh"
 
 # Development tools
 
+alias irb="irb -r rubygems"
 alias spec="spec --color"
 
 # Web server
