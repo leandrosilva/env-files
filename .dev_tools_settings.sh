@@ -13,7 +13,7 @@ alias ebuilder="/Users/leandro/Projects/ruby/ebuilder/bin/ebuilder"
 alias ikvm="mono $MONO_OPTIONS /opt/ikvm/bin/ikvm.exe"
 alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
 alias clj="java -cp /opt/clojure/clojure.jar"
-alias cljr="java -cp /opt/clojure/clojure.jar clojure.main"
+alias cljm="java -cp /opt/clojure/clojure.jar clojure.main"
 
 # Database
 
