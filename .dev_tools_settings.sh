@@ -10,6 +10,10 @@ alias fsi="mono $MONO_OPTIONS /opt/fsharp/bin/fsi.exe"
 alias fsc="mono $MONO_OPTIONS /opt/fsharp/bin/fsc.exe"
 alias tracker="/Users/leandro/Projects/ruby/pivotal-tracker-console/bin/tracker"
 alias ebuilder="/Users/leandro/Projects/ruby/ebuilder/bin/ebuilder"
+alias ikvm="mono $MONO_OPTIONS /opt/ikvm/bin/ikvm.exe"
+alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
+alias clj="java -cp /opt/clojure/clojure.jar"
+alias cljr="java -cp /opt/clojure/clojure.jar clojure.main"
 
 # Database
 
@@ -32,13 +36,13 @@ JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
 export JAVA_HOME
 
 # Mono
-MONO_PREFIX=/usr/local/Cellar/mono/HEAD
-GNOME_PREFIX=/usr
-export LD_LIBRARY_PATH=$MONO_PREFIX/lib:$LD_LIBRARY_PATH
-export C_INCLUDE_PATH=$MONO_PREFIX/include:$GNOME_PREFIX/include
-export ACLOCAL_PATH=$MONO_PREFIX/share/aclocal
-export PKG_CONFIG_PATH=$MONO_PREFIX/lib/pkgconfig:$GNOME_PREFIX/lib/pkgconfig
-export PATH=$MONO_PREFIX/bin:$PATH
+# MONO_PREFIX=/usr/local/Cellar/mono/HEAD
+# GNOME_PREFIX=/usr
+# export LD_LIBRARY_PATH=$MONO_PREFIX/lib:$LD_LIBRARY_PATH
+# export C_INCLUDE_PATH=$MONO_PREFIX/include:$GNOME_PREFIX/include
+# export ACLOCAL_PATH=$MONO_PREFIX/share/aclocal
+# export PKG_CONFIG_PATH=$MONO_PREFIX/lib/pkgconfig:$GNOME_PREFIX/lib/pkgconfig
+# export PATH=$MONO_PREFIX/bin:$PATH
 
 # Jewler gem options
 JEWELER_OPTS="--rspec"
@@ -47,9 +51,9 @@ export JEWELER_OPTS
 # Mochiweb
 MOCHIWEB_HOME=/opt/mochiweb
 PATH=$PATH:$MOCHIWEB_HOME/scripts
-export PATH MOCHIWEB_HOME
+export PATH
 
 # Webmachine
 WEBMACHINE_HOME=/opt/webmachine
 PATH=$PATH:$WEBMACHINE_HOME/scripts
-export PATH WEBMACHINE_HOME
+export PATH
