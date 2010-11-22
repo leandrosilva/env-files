@@ -6,8 +6,8 @@
 
 alias irb="irb -r rubygems"
 alias spec="spec --color"
-alias fsi="mono $MONO_OPTIONS /opt/fsharp/bin/fsi.exe"
-alias fsc="mono $MONO_OPTIONS /opt/fsharp/bin/fsc.exe"
+alias fsi="mono $MONO_OPTIONS /opt/fsharp/bin/fsi.exe -I:/opt/fsharp/bin"
+alias fsc="mono $MONO_OPTIONS /opt/fsharp/bin/fsc.exe --resident"
 alias tracker="/Users/leandro/Projects/ruby/pivotal-tracker-console/bin/tracker"
 alias ebuilder="/Users/leandro/Projects/ruby/ebuilder/bin/ebuilder"
 alias ikvm="mono $MONO_OPTIONS /opt/ikvm/bin/ikvm.exe"
@@ -57,3 +57,7 @@ export PATH
 WEBMACHINE_HOME=/opt/webmachine
 PATH=$PATH:$WEBMACHINE_HOME/scripts
 export PATH
+
+# F#
+FSHARP_COMPILER_BIN=/opt/fsharp/bin
+export FSHARP_COMPILER_BIN
