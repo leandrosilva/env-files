@@ -7,13 +7,15 @@
 alias irb="irb -r rubygems"
 alias spec="spec --color"
 alias fsi="mono $MONO_OPTIONS /opt/fsharp/bin/fsi.exe -I:/opt/fsharp/bin"
-alias fsc="mono $MONO_OPTIONS /opt/fsharp/bin/fsc.exe --resident"
+alias fsc="mono $MONO_OPTIONS /opt/fsharp/bin/fsc.exe"
 alias tracker="/Users/leandro/Projects/ruby/pivotal-tracker-console/bin/tracker"
 alias ebuilder="/Users/leandro/Projects/ruby/ebuilder/bin/ebuilder"
 alias ikvm="mono $MONO_OPTIONS /opt/ikvm/bin/ikvm.exe"
 alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
 alias clj="java -cp /opt/clojure/clojure.jar"
 alias cljm="java -cp /opt/clojure/clojure.jar clojure.main"
+alias iron_hammerizer="source /Users/leandro/Projects/locaweb/dev/.settings/iron_hammer/setup.sh"
+alias cucumberb="bundle exec cucumber --color"
 
 # Database
 

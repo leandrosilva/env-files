@@ -17,7 +17,7 @@ fi
 #
 
 # Define how Bash prompt looks like
-export PS1='\n\[\e[0;32m\]\u@\h \[\e[0;33m\]\w \[\e[0;35m\]$(__git_ps1 "(%s)")\n\[\e[0;32m\]\$ \[\e[0;37m\]'
+export PS1='\n\[\e[0;32m\]\u@\h \[\e[0;33m\]\w \[\e[0;35m\]$(__git_ps1 "(%s)")\n\[\e[0;32m\]\$ \[\e[00m\]'
 
 # Cli Colors
 export CLICOLOR=1
