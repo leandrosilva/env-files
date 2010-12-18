@@ -63,39 +63,3 @@ export PATH
 # F#
 FSHARP_COMPILER_BIN=/opt/fsharp/bin
 export FSHARP_COMPILER_BIN
-
-# web2py
-web2pyrizer() {
-    WEB2PY_APPDIR=/opt/web2py/applications
-    APPNAME=`basename $PWD`
-    
-    if [ "$1" = "-d" ]; then
-        echo Deploying $APPNAME application to web2py server at $WEB2PY_APPDIR
-        
-        ln -s $PWD $WEB2PY_APPDIR/$APPNAME;
-        
-    elif [ "$1" = "-r" ]; then
-        echo Undeploying $APPNAME application from web2py server at $WEB2PY_APPDIR
-
-        rm $WEB2PY_APPDIR/$APPNAME;
-
-    elif [ "$1" = "-l" ]; then
-        echo Deployed applications on web2py server at $WEB2PY_APPDIR
-        echo
-        
-        ls $WEB2PY_APPDIR
-    
-    else
-        echo Usage:
-        echo
-        echo "    web2pyrizer [argument]"
-        echo
-        echo Available arguments:
-        echo
-        echo "    -d    deploy the _current_ application to web2py server"
-        echo "    -r    undeploy the _current_ application from web2py server"
-        echo "    -l    list deployed applications on web2py server"
-        echo
-        echo Consider that the _current_ application is the _current_ directory
-    fi
-}
