@@ -86,7 +86,7 @@ web2pyrizer() {
         ls $WEB2PY_APPDIR
     
     else
-        echo Avaliable commands:
+        echo Available commands:
         echo
         echo "    -d    deploy the _current_ application to web2py server"
         echo "    -r    undeploy the _current_ application from web2py server"
