@@ -12,10 +12,11 @@ alias tracker="/Users/leandro/Projects/ruby/pivotal-tracker-console/bin/tracker"
 alias ebuilder="/Users/leandro/Projects/ruby/ebuilder/bin/ebuilder"
 alias ikvm="mono $MONO_OPTIONS /opt/ikvm/bin/ikvm.exe"
 alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
-alias clj="java -cp /opt/clojure/clojure.jar"
-alias cljm="java -cp /opt/clojure/clojure.jar clojure.main"
+# alias clj="java -cp /opt/clojure/clojure.jar"
+# alias cljm="java -cp /opt/clojure/clojure.jar clojure.main"
 alias cucumberb="bundle exec cucumber --color"
 alias iron_hammerizer="source /Users/leandro/Projects/locaweb/dev/.settings/iron_hammer/setup.sh"
+alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.1/libexec/bin:$PATH"
 
 # Database
 
@@ -63,3 +64,7 @@ export PATH
 # F#
 FSHARP_COMPILER_BIN=/opt/fsharp/bin
 export FSHARP_COMPILER_BIN
+
+# Clojure
+CLOJURE_CONTRIB_HOME=/usr/local/Cellar/clojure-contrib/1.2.0
+export CLASSPATH=$CLASSPATH:$CLOJURE_CONTRIB_HOME/clojure-contrib.jar
