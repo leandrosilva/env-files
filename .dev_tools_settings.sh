@@ -34,6 +34,8 @@ alias openjms-admin="/opt/openjms/bin/admin.sh"
 alias yaws-start="launchctl load -w /Library/LaunchDaemons/org.macports.yaws.plist"
 alias yaws-stop="launchctl unload -w /Library/LaunchDaemons/org.macports.yaws.plist"
 
+alias jetty="(cd /opt/jetty && java -jar start.jar)"
+
 # Java
 JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
 export JAVA_HOME
