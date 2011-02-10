@@ -6,6 +6,7 @@
 
 alias irb="irb -r rubygems"
 alias spec="spec --color"
+alias gemset="rvm gemset"
 alias fsi="mono $MONO_OPTIONS /opt/fsharp/bin/fsi.exe -I:/opt/fsharp/bin"
 alias fsc="mono $MONO_OPTIONS /opt/fsharp/bin/fsc.exe"
 alias tracker="/Users/leandro/Projects/ruby/pivotal-tracker-console/bin/tracker"
