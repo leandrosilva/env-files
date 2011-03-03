@@ -36,6 +36,7 @@ alias yaws-start="launchctl load -w /Library/LaunchDaemons/org.macports.yaws.pli
 alias yaws-stop="launchctl unload -w /Library/LaunchDaemons/org.macports.yaws.plist"
 
 alias jetty="(cd /opt/jetty && java -jar start.jar)"
+alias jetty-rackup="/Users/leandro/Projects/ruby/jetty-rackup/bin/jetty-rackup"
 
 # Java
 JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/

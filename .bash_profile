@@ -37,6 +37,7 @@ export LC_CTYPE=en_US.UTF-8
 alias home="cd ~"
 alias ll="ls -lah"
 alias cls="clear"
+alias grep="grep --color=auto"
 
 alias tar-xvf="tar xvf"
 
