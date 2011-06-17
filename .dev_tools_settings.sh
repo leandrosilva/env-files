@@ -2,6 +2,11 @@
 # DEVELOPMENT TOOLS SETTINGS ######################################################################
 #
 
+# System
+
+PATH=$PATH:/usr/local/sbin
+export PATH
+
 # Terminal tools
 
 alias irb="irb -r rubygems"
@@ -18,6 +23,7 @@ alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
 alias cucumberb="bundle exec cucumber --color"
 alias iron_hammerizer="source /Users/leandro/Projects/locaweb/dev/.settings/iron_hammer/setup.sh"
 alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.1/libexec/bin:$PATH"
+alias gitx="open /Applications/GitX.app"
 
 # Database
 
