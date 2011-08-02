@@ -24,6 +24,9 @@ alias cucumberb="bundle exec cucumber --color"
 alias iron_hammerizer="source /Users/leandro/Projects/locaweb/dev/.settings/iron_hammer/setup.sh"
 alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.1/libexec/bin:$PATH"
 alias gitx="open /Applications/GitX.app"
+alias replacer="/opt/replacer"
+alias rebar="/opt/rebar"
+alias elasticsearch="elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.17.1/config/elasticsearch.yml"
 
 # Database
 
