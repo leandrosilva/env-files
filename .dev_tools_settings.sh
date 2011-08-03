@@ -29,6 +29,7 @@ alias gitx="open /Applications/GitX.app"
 alias replacer="/opt/replacer"
 alias rebar="/opt/rebar"
 alias elasticsearch="elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.17.1/config/elasticsearch.yml"
+alias project="/opt/project"
 
 # Database
 
