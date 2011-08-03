@@ -4,6 +4,8 @@
 
 # System
 
+ulimit -n 2560
+
 PATH=$PATH:/usr/local/sbin
 export PATH
 
