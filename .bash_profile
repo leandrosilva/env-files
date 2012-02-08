@@ -9,7 +9,7 @@ fi
 
 # Enable git_completion support
 if [ -f ~/.git_completion.sh ]; then
-  source ~/.git_completion.sh
+  source /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
 #
