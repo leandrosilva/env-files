@@ -28,8 +28,11 @@ alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.1/libexec/bin:$PATH"
 alias gitx="open /Applications/GitX.app"
 alias replacer="/opt/replacer"
 alias rebar="/opt/rebar"
-alias elasticsearch="elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.17.1/config/elasticsearch.yml"
-alias project="/opt/project"
+alias elasticsearch="elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.19.2/config/elasticsearch.yml"
+alias project="/Users/leandro/Projects/environment/bash/bin/project"
+alias goto="project -g"
+alias git-puller="/opt/git-puller"
+alias vpn-pinger="ping sc-homolog-win2.fabrica.locaweb.com.br"
 
 # Database
 
@@ -84,3 +87,11 @@ export FSHARP_COMPILER_BIN
 # Clojure
 CLOJURE_CONTRIB_HOME=/usr/local/Cellar/clojure-contrib/1.2.0
 export CLASSPATH=$CLASSPATH:$CLOJURE_CONTRIB_HOME/clojure-contrib.jar
+
+# Go
+GO_HOME=/usr/local/Cellar/go/1.0.1
+GO_WORKSPACES_HOME=/Users/leandro/Projects/go
+GOPATH=$GO_WORKSPACES_HOME/default:$GO_WORKSPACES_HOME/mygo:$GO_WORKSPACES_HOME/go-learning
+PATH=$PATH:$GO_HOME
+export GOPATH
+export PATH
