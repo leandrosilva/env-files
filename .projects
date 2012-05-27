@@ -1,0 +1,55 @@
+cameron:
+  home: ~/Projects/erlang/cameron
+  tabs:
+    - mate .
+    - ls
+    - redis-server
+    - sleep 5 && redis-cli
+    - cd test/foo_workflow && ./bin/run
+
+dislock:
+  home: ~/Projects/go/go-learning/src/dislock
+  tabs:
+    - redis-server
+    - sleep 5 && redis-cli
+    - mate .
+
+qdis:
+  home: ~/Projects/clojure/qdis
+  tabs:
+    - cd db && redis-server
+    - cd db && sleep 5 && redis-cli
+    - mate .
+    - ls
+
+notifications:
+  home: ~/Projects/locaweb/dev/systems-20/notifications
+  tabs:
+    - mate .
+    - redis-server
+    - mongod
+    
+sap_gateway:
+  home: ~/Projects/locaweb/dev/systems-20/sap-gateway
+  tabs:
+    - mate .
+    
+suba:
+  home: ~/Projects/locaweb/dev/systems-20/suba
+  tabs:
+    - mate .
+
+eldapi:
+  home: ~/Projects/locaweb/dev/systems-20/eldapi
+  tabs:
+    - mate .
+cwb:
+  home: ~/Projects/locaweb/dev/systems-20/customer-workbench/customer-workbench
+  tabs:
+    - mate .
+    
+swb:
+  home: ~/Projects/locaweb/dev/systems-20/support-workbench
+  tabs:
+    - mate .
+    
