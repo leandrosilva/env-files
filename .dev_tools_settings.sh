@@ -33,6 +33,7 @@ alias project="/Users/leandro/Projects/environment/bash/bin/project"
 alias goto="project -g"
 alias git-puller="/opt/git-puller"
 alias vpn-pinger="ping sc-homolog-win2.fabrica.locaweb.com.br"
+alias lein="/opt/lein"
 
 # Database
 
