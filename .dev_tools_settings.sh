@@ -34,6 +34,7 @@ alias goto="project -g"
 alias git-puller="/opt/git-puller"
 alias vpn-pinger="ping sc-homolog-win2.fabrica.locaweb.com.br"
 alias lein="/opt/lein"
+alias jmeter="/opt/apache-jmeter/bin/jmeter"
 
 # Database
 
