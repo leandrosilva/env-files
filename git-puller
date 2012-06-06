@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+fail "Directory argument missing. Usage: `git-pull DIR`" if ARGV.empty?
+place = ARGV[0]
+
+Dir["#{place}/*"].each do |dir|
+  next unless File.directory? dir
+  puts dir
+  system "(cd #{dir} && git pull origin master)"
+end

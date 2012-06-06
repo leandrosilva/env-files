@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+# Example:
+#
+# $ ./replacer foo bar *.*
+#
+# foo.app > bar.app
+# foo.erl > bar.erl
+# foo_app.erl > bar_app.erl
+# foo_sup.erl > bar_sup.erl
+# foo_deps.erl > bar_deps.erl
+# foo_server.erl > bar_server.erl
+
+from = ARGV[0]
+to   = ARGV[1]
+
+puts "Replacing '#{from}' to '#{to}' in the file names"
+
+ARGV.each do |current_file|
+  next if current_file == from or current_file == to
+  next unless File.exist? current_file
+  next unless current_file.include? from
+  
+  new_file = current_file.gsub(from, to)
+  puts "#{current_file} > #{new_file}"
+  File.rename current_file, new_file
+end
