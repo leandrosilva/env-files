@@ -24,7 +24,7 @@ alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
 # alias cljm="java -cp /opt/clojure/clojure.jar clojure.main"
 alias cucumberb="bundle exec cucumber --color"
 alias iron_hammerizer="source /Users/leandro/Projects/locaweb/dev/.settings/iron_hammer/setup.sh"
-alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.1/libexec/bin:$PATH"
+alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.2/libexec/bin:$PATH"
 alias gitx="open /Applications/GitX.app"
 alias replacer="/opt/replacer"
 alias rebar="/opt/rebar"
@@ -41,6 +41,9 @@ alias jmeter="/opt/apache-jmeter/bin/jmeter"
 alias couchdb-start="couchdb -b && echo Futon: Overview at http://localhost:5984/_utils"
 alias couchdb-stop="couchdb -d"
 
+alias pg-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
 # Middleware
 
 alias openjms-startup="/opt/openjms/bin/startup.sh &"
@@ -52,7 +55,7 @@ alias openjms-admin="/opt/openjms/bin/admin.sh"
 alias yaws-start="launchctl load -w /Library/LaunchDaemons/org.macports.yaws.plist"
 alias yaws-stop="launchctl unload -w /Library/LaunchDaemons/org.macports.yaws.plist"
 
-alias jetty="(cd /opt/jetty && java -jar start.jar)"
+# alias jetty="(cd /opt/jetty && java -jar start.jar)"
 alias jetty-rackup="/Users/leandro/Projects/ruby/jetty-rackup/bin/jetty-rackup"
 
 # Java
@@ -97,3 +100,7 @@ GOPATH=$GO_WORKSPACES_HOME/default:$GO_WORKSPACES_HOME/mygo:$GO_WORKSPACES_HOME/
 PATH=$PATH:$GO_HOME
 export GOPATH
 export PATH
+
+# RVM
+RVM_HOME=/Users/leandro/.rvm/
+PATH=$PATH:$RVM_HOME/bin

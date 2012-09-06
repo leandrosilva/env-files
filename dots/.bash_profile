@@ -3,14 +3,13 @@
 #
 
 # Load settings to development tools
-if [ -f ~/.dev_tools_settings.sh ]; then
-  source ~/.dev_tools_settings.sh
-fi
+source ~/.dev_tools_settings.sh
 
-# Enable git_completion support
-if [ -f ~/.git_completion.sh ]; then
-  source /usr/local/etc/bash_completion.d/git-completion.bash
-fi
+# Enable completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/lein-completion.bash
+source /usr/local/etc/bash_completion.d/hg-completion.bash
 
 #
 # TERMINAL SETTINGS ###############################################################################
@@ -41,10 +40,12 @@ alias grep="grep --color=auto"
 
 alias tar-xvf="tar xvf"
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 #
-# RVM SETTINGS ####################################################################################
+# RVM #############################################################################################
 #
 
-if [[ -s /Users/leandro/.rvm/scripts/rvm ]] ; then
-	source /Users/leandro/.rvm/scripts/rvm ;
+if [ -f ~/.rvm/scripts/rvm ]; then
+  source ~/.rvm/scripts/rvm
 fi
