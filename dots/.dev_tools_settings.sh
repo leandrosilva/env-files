@@ -44,11 +44,19 @@ alias couchdb-stop="couchdb -d"
 alias pg-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pg-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
+alias cassandra-stop="pgrep -u leandro -f cassandra | xargs kill -9"
+
 # Middleware
 
 alias openjms-startup="/opt/openjms/bin/startup.sh &"
 alias openjms-shutdown="/opt/openjms/bin/shutdown.sh"
 alias openjms-admin="/opt/openjms/bin/admin.sh"
+
+alias zookeeper="/opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties"
+
+alias kafka="/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties"
+alias kafka-producer="/opt/kafka/bin/kafka-console-producer.sh --zookeeper 127.0.0.1:2181 --topic"
+alias kafka-consumer="/opt/kafka/bin/kafka-console-consumer.sh --zookeeper 127.0.0.1:2181 --topic"
 
 # Web server
 
