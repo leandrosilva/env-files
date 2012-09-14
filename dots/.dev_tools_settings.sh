@@ -20,8 +20,6 @@ alias tracker="/Users/leandro/Projects/ruby/pivotal-tracker-console/bin/tracker"
 alias ebuilder="/Users/leandro/Projects/ruby/ebuilder/bin/ebuilder"
 alias ikvm="mono $MONO_OPTIONS /opt/ikvm/bin/ikvm.exe"
 alias ikvmc="mono $MONO_OPTIONS /opt/ikvm/bin/ikvmc.exe"
-# alias clj="java -cp /opt/clojure/clojure.jar"
-# alias cljm="java -cp /opt/clojure/clojure.jar clojure.main"
 alias cucumberb="bundle exec cucumber --color"
 alias iron_hammerizer="source /Users/leandro/Projects/locaweb/dev/.settings/iron_hammer/setup.sh"
 alias jythonrizer="export PATH=/usr/local/Cellar/jython/2.5.2/libexec/bin:$PATH"
@@ -35,6 +33,8 @@ alias git-puller="/opt/git-puller"
 alias vpn-pinger="ping sc-homolog-win2.fabrica.locaweb.com.br"
 alias lein="/opt/lein"
 alias jmeter="/opt/apache-jmeter/bin/jmeter"
+alias ipy="mono /opt/ironlangs/bin/Release/ipy.exe"
+alias ir="mono /opt/ironlangs/bin/Release/ir.exe"
 
 # Database
 
