@@ -72,10 +72,6 @@ export JAVA_HOME
 # export PKG_CONFIG_PATH=$MONO_PREFIX/lib/pkgconfig:$GNOME_PREFIX/lib/pkgconfig
 # export PATH=$MONO_PREFIX/bin:$PATH
 
-# Jewler gem options
-JEWELER_OPTS="--rspec"
-export JEWELER_OPTS
-
 # Mochiweb
 MOCHIWEB_HOME=/opt/mochiweb
 PATH=$PATH:$MOCHIWEB_HOME/scripts
@@ -85,10 +81,6 @@ export PATH
 WEBMACHINE_HOME=/opt/webmachine
 PATH=$PATH:$WEBMACHINE_HOME/scripts
 export PATH
-
-# F#
-FSHARP_COMPILER_BIN=/opt/fsharp/bin
-export FSHARP_COMPILER_BIN
 
 # Clojure
 CLOJURE_CONTRIB_HOME=/usr/local/Cellar/clojure-contrib/1.2.0
