@@ -30,6 +30,10 @@ alias lein="/opt/lein"
 alias jmeter="/opt/apache-jmeter/bin/jmeter"
 alias whereis-sitepackage="python -c \"from distutils.sysconfig import get_python_lib; print get_python_lib()\""
 
+function virtualenv-load() {
+  source /Users/leandro/Projects/python/.virtualenv/$1/bin/activate
+}
+
 # Database
 
 alias couchdb-start="couchdb -b && echo Futon: Overview at http://localhost:5984/_utils"
