@@ -28,6 +28,7 @@ alias goto="project -g"
 alias git-puller="/opt/git-puller"
 alias lein="/opt/lein"
 alias jmeter="/opt/apache-jmeter/bin/jmeter"
+alias whereis-sitepackage="python -c \"from distutils.sysconfig import get_python_lib; print get_python_lib()\""
 
 # Database
 

@@ -22,18 +22,40 @@ qdis:
     - mate .
     - ls
 
+env-files:
+  home: ~/Projects/environment/env-files
+  tabs:
+    - ls
+
+klog:
+  home: ~/Projects/python/klog
+  tabs:
+    - ls
+
+klog2:
+  home: ~/Projects/java/klog2
+  tabs:
+    - ls
+
+labor:
+  home: ~/Projects/ruby/labor
+  tabs:
+    - ls
+
+###
+
 notifications:
   home: ~/Projects/locaweb/dev/systems-20/notifications
   tabs:
     - mate .
     - redis-server
     - mongod
-    
+
 sap_gateway:
   home: ~/Projects/locaweb/dev/systems-20/sap-gateway
   tabs:
     - mate .
-    
+
 suba:
   home: ~/Projects/locaweb/dev/systems-20/suba
   tabs:
@@ -43,13 +65,13 @@ eldapi:
   home: ~/Projects/locaweb/dev/systems-20/eldapi
   tabs:
     - mate .
+
 cwb:
   home: ~/Projects/locaweb/dev/systems-20/customer-workbench/customer-workbench
   tabs:
     - mate .
-    
+
 swb:
   home: ~/Projects/locaweb/dev/systems-20/support-workbench
   tabs:
     - mate .
-    
