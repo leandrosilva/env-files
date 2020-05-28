@@ -1,17 +1,4 @@
 #
-# DEVELOPMENT SETTINGS ############################################################################
-#
-
-# Load settings to development tools
-source ~/.dev_tools_settings.sh
-
-# Enable completion
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-source /usr/local/etc/bash_completion.d/lein-completion.bash
-source /usr/local/etc/bash_completion.d/hg-completion.bash
-
-#
 # TERMINAL SETTINGS ###############################################################################
 #
 
@@ -40,12 +27,41 @@ alias grep="grep --color=auto"
 
 alias tar-xvf="tar xvf"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+ulimit -n 2560
+
+PATH=$PATH:/usr/local/sbin
+export PATH
 
 #
-# RVM #############################################################################################
+# DEVELOPMENT SETTINGS ############################################################################
 #
 
+# RVM
 if [ -f ~/.rvm/scripts/rvm ]; then
   source ~/.rvm/scripts/rvm
 fi
+
+# Development tools
+source ~/.dev_tools_settings.sh
+
+# Git completion
+source /usr/local/etc/bash_completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
+# Anaconda
+function activate_conda {
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+  else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+      . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+      export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
+}
