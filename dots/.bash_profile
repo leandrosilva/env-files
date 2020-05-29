@@ -33,16 +33,8 @@ PATH=$PATH:/usr/local/sbin
 export PATH
 
 #
-# DEVELOPMENT SETTINGS ############################################################################
+# DEVELOPMENT #####################################################################################
 #
-
-# RVM
-if [ -f ~/.rvm/scripts/rvm ]; then
-  source ~/.rvm/scripts/rvm
-fi
-
-# Development tools
-source ~/.dev_tools_settings.sh
 
 # Git completion
 source /usr/local/etc/bash_completion
@@ -65,3 +57,6 @@ function activate_conda {
   unset __conda_setup
   # <<< conda initialize <<<
 }
+
+# Development tools
+source ~/.dev_tools_settings.sh
